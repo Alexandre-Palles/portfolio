@@ -5,7 +5,25 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+/*Alexandre Palles 11797038*/
+/*Aplicação dos conceitos de Herança, especificidade e cascata: 
+  Herança: 
+    body, onde as propriedades como font-family, color, margin, padding, background foram definidas para todo o documento. Isso reflete a herança dessas propriedades para todos os elementos dentro do <body>; 
+    vários elementos, como .back-to-top, .count-box, .icon-box, .resume-item, .icon-box, possuem propriedades de fundo (background) e/ou de borda (border). O conceito de cascata é evidente aqui, onde diferentes elementos compartilham características visuais semelhantes definidas em seletores genéricos.
 
+
+  Especificidade:
+    No seletor #header, onde propriedades específicas são definidas para um elemento com o ID "header". Isso confere alta especificidade a essas propriedades, pois os seletores de ID têm uma especificidade maior do que os seletores de classe ou de tipo.
+    Em diversos elementos, como .resume, .skills, .about, onde propriedades específicas são aplicadas a elementos com classes específicas. Isso adiciona uma especificidade média às propriedades definidas nesses seletores
+    Em seletores como body, h1, a, onde propriedades são aplicadas a todos os elementos desse tipo. Seletor de elemento possui baixa especificidade em comparação com seletores de classe e ID.
+
+
+  Cascata:
+    A propriedade font-family: "Open Sans", sans-serif; definida para o elemento body é herdada por todos os elementos dentro do <body>, a menos que seja especificamente substituída por uma regra CSS mais específica
+    Em casos onde há conflito entre regras CSS para o mesmo elemento, a especificidade dos seletores usados determina qual regra será aplicada. Por exemplo, uma regra com um seletor de ID (#header) tem uma especificidade maior do que uma regra com um seletor de classe (.nav-menu a), portanto, propriedades definidas para #header terão precedência sobre as definidas para .nav-menu a.
+    
+
+*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
